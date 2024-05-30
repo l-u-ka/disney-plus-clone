@@ -19,11 +19,10 @@ export default function App({ Component, pageProps }: AppProps) {
       <ThemeProvider theme={theme}>
         <SessionProvider session={pageProps.session}>
           <GlobalStyle />
-          <Header/>
+          <Header />
           <Component {...pageProps} />
         </SessionProvider>
       </ThemeProvider>
-      
     </>
   );
 }
