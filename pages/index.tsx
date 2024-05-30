@@ -25,12 +25,11 @@ export default function Home({ movieResults }: Props) {
 
   if (status === "loading") return <p>Loading</p>;
 
-  if (session)
-    return (
-      <>
-        <HomeLayout movieResults={movieResults} />
-      </>
-    );
+  return (
+    <>
+      <HomeLayout movieResults={movieResults} />
+    </>
+  );
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {

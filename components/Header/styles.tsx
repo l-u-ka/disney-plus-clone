@@ -92,7 +92,7 @@ export const UserImg = styled.img`
 `;
 export const DropDown = styled.div`
   position: fixed;
-  top: 64px;
+  top: 52px;
   right: 15px;
   background: rgb(19, 19, 19);
   border: 1px solid rgba(151, 151, 151, 0.34);

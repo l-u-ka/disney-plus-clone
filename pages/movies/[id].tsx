@@ -1,3 +1,4 @@
+import FilmLayout from "@/components/FilmLayout";
 import { MovieListType } from "@/types/MovieList";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
@@ -8,8 +9,7 @@ type Props = {
 };
 
 export default function MovieInformation({ movieResults }: Props) {
-  console.log(movieResults);
-  return <div>MovieInformation</div>;
+  return <FilmLayout movieResults={movieResults}/>
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
