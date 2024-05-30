@@ -18,9 +18,12 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   border: 3px solid rgba(249, 249, 249, 0.1);
   background-color: rgba(249, 249, 249, 0.1);
+  height: 100%;
   img {
     background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
+    height: 100% !important;
   }
+  overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
