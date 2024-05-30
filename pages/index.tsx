@@ -36,7 +36,7 @@ export default function Home({ movieResults }: Props) {
 export const getServerSideProps: GetServerSideProps = async () => {
   const response = await fetch("http://localhost:3000/api/movies");
   const movieResults = await response.json();
-  
+
   return {
     props: {
       movieResults,
